@@ -9,7 +9,7 @@
 import Foundation
 
 open class MasterPlaylist {
-    var playlists = [MediaPlaylist]()
+    open var playlists = [MediaPlaylist]()
     open var path: String?
 
     public init() {}
