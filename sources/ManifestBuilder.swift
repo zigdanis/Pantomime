@@ -42,15 +42,11 @@ open class ManifestBuilder {
                         do {
                             let programIdString = try line.replace("(.*)PROGRAM-ID=(\\d+)(.*)", replacement: "$2")
                             currentMediaPlaylistExist.programId = Int(programIdString)!
-                        } catch {
-                            print("Failed to parse program-id on master playlist. Line = \(line)")
-                        }
+                        } catch { }
                         do {
                             let bandwidthString = try line.replace("(.*)BANDWIDTH=(\\d+)(.*)", replacement: "$2")
                             currentMediaPlaylistExist.bandwidth = Int(bandwidthString)!
-                        } catch {
-                            print("Failed to parse bandwidth on master playlist. Line = \(line)")
-                        }
+                        } catch { }
                     }
 
                 }
