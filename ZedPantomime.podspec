@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
-  s.name         = "Pantomime"
-  s.version      = "0.1.4"
+  s.name         = "ZedPantomime"
+  s.version      = "0.1.5"
   s.summary      = "Parsing of M3U8 manifest files for Swift"
 
   s.description      = <<-DESC
@@ -16,6 +16,6 @@ Pod::Spec.new do |s|
   s.author       = { "Thomas Christensen" => "tchristensen@nordija.com" }
   s.ios.deployment_target = "8.0"
   s.osx.deployment_target = "10.10"
-  s.source       = { :git => "https://github.com/zigdanis/Pantomime.git", :tag => "0.1.4" }
+  s.source       = { :git => "https://github.com/zigdanis/Pantomime.git" }
   s.source_files  = "sources"
 end
